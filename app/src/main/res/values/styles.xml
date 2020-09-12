@@ -3,9 +3,50 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <style name="blockly" parent="BlocklyVerticalTheme">
+        <!-- Customize your theme here. -->
+        <item name="android:windowActionBar">true</item>
+        <item name="android:windowFullscreen">true</item>        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="HeaderBar">
+        <item name="android:background">#303F9F</item>
+    </style>
 
+    <style name="TitleStyle">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ToolIconStyle">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="FeatureButtonStyle">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="about_text_style">
+        <item name="android:textSize">18dp</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:color">#000000</item>
+    </style>
 </resources>

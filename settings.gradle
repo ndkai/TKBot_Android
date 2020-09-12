@@ -1,2 +1,7 @@
+include ':FastBleLib'
+include ':blockly'
+include ':blockly'
 rootProject.name='IOT_App'
+include ':app'
+include ':bluetoothlibrary'
 include ':app'

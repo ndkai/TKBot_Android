@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Content area for TurtleActivity with both Blockly workspace.
+  -  and WebView where code can run.
+  -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/blockly_container"
+    tools:ignore="MissingDefaultResource">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <include layout="@layout/blockly_unified_workspace" />
+    </RelativeLayout>
+    <WebView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/webview"/>
+
+    <Button
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:text="duy"
+        android:id="@+id/reset_click"/>
+
+</LinearLayout>

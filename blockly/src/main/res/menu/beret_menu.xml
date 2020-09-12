@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <item android:id="@+id/action_save" android:title="@string/action_save"
+        android:orderInCategory="10" app:showAsAction="never"
+        android:icon="@drawable/ic_file_download_white_24dp"/>
+    <item android:id="@+id/action_load" android:title="@string/action_load"
+        android:orderInCategory="11" app:showAsAction="never"
+        android:icon="@drawable/ic_file_upload_white_24dp"/>
+    <item android:id="@+id/blockly_zoom_in_button" android:title="@string/zoom_in"
+        android:orderInCategory="12" app:showAsAction="never"
+        android:icon="@drawable/ic_file_download_white_24dp"/>
+    <item android:id="@+id/blockly_zoom_out_button" android:title="@string/zoom_out"
+        android:orderInCategory="13" app:showAsAction="never"
+        android:icon="@drawable/ic_file_upload_white_24dp"/>
+    <item android:id="@+id/action_clear" android:title="@string/action_clear"
+        android:orderInCategory="14" app:showAsAction="never"
+        android:icon="@drawable/ic_layers_clear_white_24dp"/>
+    <item android:id="@+id/action_stop" android:title="Stop"
+        android:orderInCategory="15" app:showAsAction="always"
+        android:icon="@drawable/stop"/>
+    <item android:id="@+id/action_run" android:title="@string/action_run"
+        android:orderInCategory="16" app:showAsAction="always"
+        android:icon="@drawable/ic_play_arrow_white_24dp"/>
+    
+    
+</menu>

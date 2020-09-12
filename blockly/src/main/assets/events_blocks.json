@@ -1,0 +1,62 @@
+[
+  {
+    "type": "event_program_starts",
+    "message0": "when program starts",
+    "message1": "%1",
+    "args1": [
+      {"type": "input_statement", "name": "DO"}
+    ],
+    "colour": 120
+  }
+  ,
+  {
+    "type": "event_repeat_timer",
+    "message0": "repeat every %1 milliseconds",
+    "inputsInline": true,
+    "args0": [
+      {
+        "type": "input_value",
+        "name": "PERIOD",
+        "check": "Number"
+      }
+    ],
+    "message1": "%1",
+    "args1": [
+      {"type": "input_statement", "name": "DO"}
+    ],
+    "colour": 65
+  }
+   ,
+  {
+    "type": "event_wait",
+    "message0": "wait %1 milliseconds",
+    "inputsInline": true,
+    "args0": [
+      {
+        "type": "input_value",
+        "name": "TIMEOUT",
+        "check": "Number"
+      }
+    ],
+    "previousStatement": "Action",
+    "nextStatement": "Action",
+    "colour": 120
+  }
+  ,
+  {
+    "type": "logic_boolean_workaround",
+    "message0": "\u00A0%1",
+    "args0": [
+      {
+        "type": "field_dropdown",
+        "name": "BOOL",
+        "options": [
+          ["true", "TRUE"],
+          ["false", "FALSE"]
+        ]
+      }
+    ],
+    "output": "Boolean",
+    "colour": "210"
+  }
+]

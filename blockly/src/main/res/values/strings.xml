@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">common</string>
+    <string name="confirm_clear_workspace_message">Clean workspace?</string>
+    <string name="confirm_clear_workspace_title">Are you sure you want to clean the workspace?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="zoom_in">Zoom in</string>
+    <string name="zoom_out">Zoom out</string>
+    <string name="no_blocks_error">Workspace is empty!</string>
+</resources>

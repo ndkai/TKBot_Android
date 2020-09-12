@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/feature_setting"
+        app:showAsAction="always"
+        android:icon="@drawable/feature_icon"
+        android:title="" />
+
+    <item
+        android:id="@+id/change_language"
+        app:showAsAction="always"
+        android:icon="@drawable/language_iocn"
+        android:title="VN" />
+</menu>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home_icon"
+            android:title="@string/home_page" />
+        <item
+            android:id="@+id/nav_configuration"
+            android:icon="@drawable/config_icon"
+            android:title="@string/configuration" />
+        <item
+            android:id="@+id/nav_pass"
+            android:icon="@drawable/pass"
+            android:title="@string/pass" />
+        <item
+            android:id="@+id/nav_instruction"
+            android:icon="@drawable/question_icon"
+            android:title="@string/instruction" />
+
+        <item
+            android:id="@+id/nav_intro"
+            android:icon="@drawable/info_icon"
+            android:title="@string/intro" />
+
+        <item
+            android:id="@+id/nav_rules"
+            android:icon="@drawable/warning_icon"
+            android:title="@string/rules" />
+
+        <item
+            android:id="@+id/nav_update_check"
+            android:icon="@drawable/check_update"
+            android:title="@string/update_check" />
+    </group>
+</menu>

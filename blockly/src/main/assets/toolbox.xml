@@ -1,0 +1,109 @@
+<toolbox>
+
+    <category name="Move">
+        <block type="turtle_move_internal"></block>
+        <block type="turtle_turn_internal"></block>
+        <block type="move1"></block>
+        <block type="move2"></block>
+<!--        <block type="motor_m1_m2_value"></block>-->
+        <block type="servo_tit"></block>
+<!--        <block type="led"></block>-->
+
+    </category>
+      //sensor
+    <category name="Sensor">
+        <block type="ultrasonic_port"></block>
+<!--        <block type="temperature_tit"></block>-->
+<!--        <block type="light_sensor"></block>-->
+<!--        <block type="line_follow"></block>-->
+<!--        <block type="line_follow2"></block>-->
+        <block type="touch_sensor"></block>
+<!--        <block type="sound_sensor"></block>-->
+
+    </category>
+
+    <category name="Control" colour="#5CA65C">
+        <block type="event_program_starts" />
+<!--        <block type="event_repeat_timer" />-->
+        <block type="wait" />
+        <!--<block type="event_wait" />-->
+        <block type="controls_repeat_ext">
+            <value name="TIMES">
+                <shadow type="math_number">
+                    <field name="NUM">10</field>
+                </shadow>
+            </value>
+        </block>
+
+        <block type="controls_repeat_ext">
+            <value name="TIMES">
+                <shadow type="text">
+                    <field name="TEXT">true</field>
+                </shadow>
+            </value>
+        </block>
+
+        <block type="controls_whileUntil">
+            <field name="MODE">WHILE</field>
+        </block>
+<!--        <block type="controls_for">-->
+<!--            <field name="VAR" id="rECrJU5V^DFFV)=Fs^+D" variabletype="">i</field>-->
+<!--            <value name="FROM">-->
+<!--                <shadow type="math_number">-->
+<!--                    <field name="NUM">1</field>-->
+<!--                </shadow>-->
+<!--            </value>-->
+<!--            <value name="TO">-->
+<!--                <shadow type="math_number">-->
+<!--                    <field name="NUM">10</field>-->
+<!--                </shadow>-->
+<!--            </value>-->
+<!--            <value name="BY">-->
+<!--                <shadow type="math_number">-->
+<!--                    <field name="NUM">1</field>-->
+<!--                </shadow>-->
+<!--            </value>-->
+<!--        </block>-->
+<!--        <block type="controls_forEach">-->
+<!--            <field name="VAR" id="P+-jpQBtfV|(`g,htjK2" variabletype="">j</field>-->
+<!--        </block>-->
+    </category>
+    <category name="Logic" colour="#5C81A6">
+        <block type="controls_if" />
+        <block type="logic_compare" />
+        <block type="logic_operation" />
+        <block type="compare"></block>
+        <block type="logic_negate" />
+        <block type="logic_boolean_workaround" />
+    </category>
+
+    // math
+    <category name="Math" colour="#5C68A6">
+        <block type="math_number">
+            <field name="NUM">0</field>
+        </block>
+
+        <block type="math_arithmetic">
+            <field name="OP">ADD</field>
+            <value name="A">
+                <shadow type="math_number">
+                    <field name="NUM">1</field>
+                </shadow>
+            </value>
+            <value name="B">
+                <shadow type="math_number">
+                    <field name="NUM">1</field>
+                </shadow>
+            </value>
+        </block>
+
+    </category>
+
+<!--    TExt-->
+    <category name="Text" colour="#5CA68D">
+        <block type="text">
+            <field name="TEXT"></field>
+        </block>
+    </category>
+
+</toolbox>

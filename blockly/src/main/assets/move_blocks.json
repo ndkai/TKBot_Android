@@ -1,0 +1,122 @@
+[
+  {
+    "type": "motor_total",
+    "message0": "Move Motor %1",
+    "args0": [
+      {
+        "type": "field_number",
+        "name": "motor",
+        "value": 0,
+        "min": -100,
+        "max": 100,
+        "precision": 1
+      }
+    ],
+    "inputsInline": true,
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": 230,
+    "tooltip": "",
+    "helpUrl": ""
+  },
+  {
+    "type": "motor_m1_m2_value",
+    "message0": "Motor M1 %1 Motor M2 %2",
+    "args0": [
+      {
+        "type": "field_number",
+        "name": "M1",
+        "value": 0,
+        "min": -100,
+        "max": 100,
+        "precision": 1
+      },
+      {
+        "type": "field_number",
+        "name": "M2",
+        "value": 0,
+        "min": -100,
+        "max": 100,
+        "precision": 1
+      }
+    ],
+    "inputsInline": true,
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": 230,
+    "tooltip": "Value M1: -100 ~ 100, Value M2: -100 ~100",
+    "helpUrl": ""
+  },
+  {
+    "type": "servo_180",
+    "message0": "Servo  %1 index %2    angle  %3 duration %4",
+    "args0": [
+      {
+        "type": "field_dropdown",
+        "name": "servo36_18",
+        "options": [
+          [
+            "180",
+            "1"
+          ],
+          [
+            "270",
+            "2"
+          ]
+        ]
+      },
+      {
+        "type": "field_dropdown",
+        "name": "index_servo",
+        "options": [
+          [
+            "1",
+            "1"
+          ],
+          [
+            "2",
+            "2"
+          ],
+          [
+            "3",
+            "3"
+          ],
+          [
+            "4",
+            "4"
+          ],
+          [
+            "5",
+            "5"
+          ],
+          [
+            "6",
+            "6"
+          ]
+        ]
+      },
+      {
+        "type": "field_number",
+        "name": "angle",
+        "value": 0,
+        "min": 0,
+        "max": 180,
+        "precision": 1
+      },
+      {
+        "type": "field_number",
+        "name": "duration",
+        "value": 300,
+        "min": 0,
+        "max": 10000,
+        "precision": 10
+      }
+    ],
+    "inputsInline": true,
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": 230,
+    "tooltip": "",
+    "helpUrl": ""
+  }
+]
