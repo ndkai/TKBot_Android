@@ -5,12 +5,24 @@
         <!-- Customize your theme here. -->
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+        <item name="android:labelTextSize">@dimen/_40ssp</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ControllerTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">true</item>
+        <item name="android:labelTextSize">@dimen/_40ssp</item>
+        <item name="windowNoTitle">false</item>
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
     <style name="blockly" parent="BlocklyVerticalTheme">
         <!-- Customize your theme here. -->
+        <item name="android:labelTextSize">@dimen/_20ssp</item>
         <item name="android:windowActionBar">true</item>
         <item name="android:windowFullscreen">true</item>        <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>

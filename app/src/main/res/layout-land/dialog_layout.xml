@@ -18,6 +18,6 @@
             android:layout_below="@id/tv"
             android:id="@+id/fragment"
             android:layout_height="match_parent"
-            class="com.example.iot_app.ui.bluetooth.hc05.BlueToothFragment"/>
+            class="com.example.iot_app.ui.bluetooth.hc05.BlueToothActivity"/>
     </RelativeLayout>
 </ScrollView>

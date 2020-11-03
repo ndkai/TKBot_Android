@@ -2,11 +2,12 @@ package com.iot.blockly
 
 import android.app.AlertDialog
 import android.content.DialogInterface
-import android.content.Intent
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
+import androidx.core.os.ConfigurationCompat
 import com.google.android.gms.nearby.connection.Strategy
 import com.google.blockly.android.AbstractBlocklyActivity
 import com.google.blockly.model.DefaultBlocks
@@ -27,6 +28,7 @@ abstract class RainbowHatBlocklyBaseActivity() : AbstractBlocklyActivity() {
     lateinit var stopMenu: MenuItem
 
     lateinit var startMenu: MenuItem
+    lateinit var bluetoothMenu: MenuItem
 
 
     override fun onCreateContentView(containerId: Int): View {
@@ -34,16 +36,34 @@ abstract class RainbowHatBlocklyBaseActivity() : AbstractBlocklyActivity() {
     }
 
     override fun getToolboxContentsXmlPath(): String {
+        val currentLocale = ConfigurationCompat.getLocales(resources.configuration)[0]
+        if(currentLocale.language == "ja"){
+            return "toolbox_jp.xml"
+        }
         return "toolbox.xml"
     }
 
     override fun getBlockDefinitionsJsonPaths(): MutableList<String> {
         val assetPaths = ArrayList(DefaultBlocks.getAllBlockDefinitions())
-   //     assetPaths.add("kodactive_blocks.json")
-        assetPaths.add("rainbowHat_blocks.json")
-        assetPaths.add("turtle_blocks.json")
-//        assetPaths.add("showscreenled_blocks.json")
-        assetPaths.add("events_blocks.json")
+        val currentLocale = ConfigurationCompat.getLocales(resources.configuration)[0]
+        Log.d("TAG", "getBlockDefinitionsJsonPaths: "+currentLocale.language)
+        if(currentLocale.language == "en"){
+            assetPaths.add("rainbowHat_blocks.json")
+            assetPaths.add("turtle_blocks.json")
+            assetPaths.add("events_blocks.json")
+        }  else{
+            if(currentLocale.language == "ja"){
+                assetPaths.add("rainbowHat_blocks.json")
+                assetPaths.add("turtle_blocks_jp.json")
+                Log.d("TAG", "getBlockDefinitionsJsonPaths: jpne")
+                assetPaths.add("events_blocks.json")
+            }
+            else{
+                assetPaths.add("rainbowHat_blocks.json")
+                assetPaths.add("turtle_blocks.json")
+                assetPaths.add("events_blocks.json")
+            }
+        }
         return assetPaths
     }
 
@@ -105,7 +125,7 @@ abstract class RainbowHatBlocklyBaseActivity() : AbstractBlocklyActivity() {
             
         } else if(id == android.R.id.home){
             openMainActivity()
-        }
+        }  
         return super.onOptionsItemSelected(item)
     }
 
@@ -126,15 +146,5 @@ abstract class RainbowHatBlocklyBaseActivity() : AbstractBlocklyActivity() {
                 }
                 .create()
                 .show()
-    }
-
-    fun showStopButton(){
-        stopMenu.setVisible(true)
-        startMenu.setVisible(false)
-    }
-
-    fun showStartButton() {
-        startMenu.setVisible(true)
-        stopMenu.setVisible(false)
     }
 }

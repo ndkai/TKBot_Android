@@ -14,6 +14,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/blockly" />
             <option value="$PROJECT_DIR$/bluetoothlibrary" />
+            <option value="$PROJECT_DIR$/fancygifdialoglib" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

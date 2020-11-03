@@ -48,17 +48,11 @@
          <TextView
              android:textStyle="bold"
              android:layout_width="wrap_content"
-             android:text="Address: "
+             android:text="@string/address"
              android:textSize="12dp"
              android:textColor="#0E0E0E"
              android:layout_height="wrap_content"/>
-         <TextView
-             style="@style/about_text_style"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:textSize="12dp"
-             android:layout_gravity="center"
-             android:text="131C Nguyễn Khoái, phường 1, Quận 4, thành phố HCM"/>
+
 
      </LinearLayout>
 
@@ -74,15 +68,9 @@
              android:layout_width="wrap_content"
              android:textColor="#0E0E0E"
              android:textSize="12dp"
+             android:layout_marginLeft="@dimen/_4sdp"
              android:layout_height="wrap_content"
-             android:text="  Phone: "/>
-         <TextView
-             android:layout_gravity="left"
-             style="@style/about_text_style"
-             android:textSize="12dp"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:text="0938806388"/>
+             android:text="@string/phone"/>
 
      </LinearLayout>
 
@@ -99,15 +87,8 @@
              android:textSize="12dp"
              android:textColor="#0E0E0E"
              android:layout_height="wrap_content"
-             android:text="  Email: "/>
-         <TextView
-
-             android:layout_gravity="left"
-             style="@style/about_text_style"
-             android:textSize="12dp"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:text="titkul2020@gmail.com"/>
+             android:layout_marginLeft="@dimen/_4sdp"
+             android:text="@string/email"/>
 
      </LinearLayout>
  </LinearLayout>

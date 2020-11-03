@@ -1,0 +1,281 @@
+[
+  {
+    "type": "rainbow_hat_button_action",
+    "message0": "when %1 is %2",
+    "args0": [
+      {
+        "type": "field_dropdown",
+        "name": "BUTTON",
+        "options": [
+          [ "Button A", "BUTTON_A" ],
+          [ "Button B", "BUTTON_B" ],
+          [ "Button C", "BUTTON_C" ]
+        ]
+      },
+      {
+        "type": "field_dropdown",
+        "name": "STATE",
+        "options": [
+          [ "pressed", "BUTTON_PRESSED" ],
+          [ "released", "BUTTON_RELEASED" ],
+          [ "changed", "BUTTON_CHANGED" ]
+        ]
+      }
+    ],
+    "message1": "%1",
+    "args1": [
+      {"type": "input_statement", "name": "DO"}
+    ],
+    "colour": 290
+  }
+,
+  {
+    "type": "rainbow_hat_read_button",
+    "message0": "is %1 pressed",
+    "output": "Boolean",
+    "args0": [
+      {
+        "type": "field_dropdown",
+        "name": "BUTTON",
+        "options": [
+          [ "Button A", "BUTTON_A" ],
+          [ "Button B", "BUTTON_B" ],
+          [ "Button C", "BUTTON_C" ]
+        ]
+      }
+    ],
+    "colour": 290
+  }
+,
+  {
+    "type": "rainbow_hat_set_led_value",
+    "message0": "set %1 LED to %2",
+    "args0": [
+      {
+        "type": "field_dropdown",
+        "name": "LED",
+        "options": [
+          [ "Red", "LED_RED" ],
+          [ "Green", "LED_GREEN" ],
+          [ "Blue", "LED_BLUE" ]
+        ]
+      },
+      {
+        "type": "input_value",
+        "name": "VALUE",
+        "check": "Boolean"
+      }
+    ],
+    "previousStatement": "Action",
+    "nextStatement": "Action",
+    "colour": 290
+  }
+,
+  {
+    "type": "rainbow_hat_read_led",
+    "message0": "state of %1 LED",
+    "output": "Boolean",
+    "args0": [
+      {
+        "type": "field_dropdown",
+        "name": "LED",
+        "options": [
+          [ "Red", "LED_RED" ],
+          [ "Green", "LED_GREEN" ],
+          [ "Blue", "LED_BLUE" ]
+        ]
+      }
+    ],
+    "colour": 290
+  }
+,
+  {
+    "type": "rainbow_hat_display_text",
+    "inputsInline": true,
+    "message0": "display text %1 on LCD",
+    "args0": [
+      {
+        "type": "input_value",
+        "name": "VALUE",
+        "check": "String"
+      }
+    ],
+    "previousStatement": "Action",
+    "nextStatement": "Action",
+    "colour": 290
+  }
+,
+  {
+    "type": "rainbow_hat_display_number",
+    "inputsInline": true,
+    "message0": "display number %1 on LCD",
+    "args0": [
+      {
+        "type": "input_value",
+        "name": "VALUE",
+        "check": "Float"
+      }
+    ],
+    "previousStatement": "Action",
+    "nextStatement": "Action",
+    "colour": 290
+  }
+,
+  {
+    "type": "rainbow_hat_read_temperature",
+    "message0": "temperature",
+    "output": "Float",
+    "colour": 290
+  }
+,
+  {
+    "type": "rainbow_hat_read_pressure",
+    "message0": "pressure",
+    "output": "Float",
+    "colour": 290
+  }
+,
+  {
+    "type": "rainbow_hat_play",
+    "message0": "play %1 frequency",
+    "inputsInline": true,
+    "args0": [
+      {
+        "type": "input_value",
+        "name": "VALUE",
+        "check": ["Double", "Float", "Integer", "Number"]
+      }
+    ],
+    "previousStatement": "Action",
+    "nextStatement": "Action",
+    "colour": 290
+  }
+,
+  {
+    "type": "rainbow_hat_stop_playing",
+    "message0": "stop playing",
+    "previousStatement": "Action",
+    "nextStatement": "Action",
+    "colour": 290
+  }
+,
+  {
+    "type": "rainbow_hat_write_led_strip",
+    "message0": "display colors %1 %2 %3 %4 %5 %6 %7",
+    "args0": [
+      {
+        "type": "field_colour",
+        "name": "COLOR1",
+        "colour": "#ff0000"
+      },
+      {
+        "type": "field_colour",
+        "name": "COLOR2",
+        "colour": "#ff0000"
+      }
+    ,
+      {
+        "type": "field_colour",
+        "name": "COLOR3",
+        "colour": "#ff0000"
+      }
+    ,
+      {
+        "type": "field_colour",
+        "name": "COLOR4",
+        "colour": "#ff0000"
+      }
+    ,
+      {
+        "type": "field_colour",
+        "name": "COLOR5",
+        "colour": "#ff0000"
+      }
+    ,
+      {
+        "type": "field_colour",
+        "name": "COLOR6",
+        "colour": "#ff0000"
+      }
+    ,
+      {
+        "type": "field_colour",
+        "name": "COLOR7",
+        "colour": "#ff0000"
+      }
+    ],
+    "inputsInline": true,
+    "previousStatement": "Action",
+    "nextStatement": "Action",
+    "colour": 290
+  }
+,
+  {
+    "type": "rainbow_hat_write_led_strip_array",
+    "message0": "display colors %1",
+    "inputsInline": true,
+    "args0": [
+      {
+        "type": "input_value",
+        "name": "COLORS",
+        "check": "Array"
+      }
+    ],
+    "inputsInline": true,
+    "previousStatement": "Action",
+    "nextStatement": "Action",
+    "colour": 290
+  }
+,
+  {
+    "type": "rainbow_hat_write_led_strip_variables",
+    "message0": "display colors %1 %2 %3 %4 %5 %6 %7",
+    "inputsInline": true,
+    "args0": [
+      {
+        "type": "input_value",
+        "name": "COLOR1",
+        "check": "Colour"
+      },
+      {
+        "type": "input_value",
+        "name": "COLOR2",
+        "check": "Colour"
+      }
+    ,
+      {
+        "type": "input_value",
+        "name": "COLOR3",
+        "check": "Colour"
+      }
+    ,
+      {
+        "type": "input_value",
+        "name": "COLOR4",
+        "check": "Colour"
+      }
+    ,
+      {
+        "type": "input_value",
+        "name": "COLOR5",
+        "check": "Colour"
+      }
+    ,
+      {
+        "type": "input_value",
+        "name": "COLOR6",
+        "check": "Colour"
+      }
+    ,
+      {
+        "type": "input_value",
+        "name": "COLOR7",
+        "check": "Colour"
+      }
+    ],
+    "inputsInline": true,
+    "previousStatement": "Action",
+    "nextStatement": "Action",
+    "colour": 290
+  }
+]

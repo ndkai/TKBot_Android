@@ -4,8 +4,16 @@ Blockly.JavaScript['event_program_starts'] = function(block) {
     var nextCode = Blockly.JavaScript.statementToCode(block, 'DO');
     return 'while(true) {\n' +
                 nextCode+'\n' +
+                "break; if(Turtle.isStop() == true){break;}\n"+
+            '}; Turtle.MF(0);\n';
+};
+
+Blockly.JavaScript['event_repeat_forever'] = function(block) {
+    var nextCode = Blockly.JavaScript.statementToCode(block, 'DO');
+    return 'while(true) {\n' +
+                nextCode+'\n' +
                 "if(Turtle.isStop() == true){break;}\n"+
-            '}\n';
+            '}; Turtle.MF(0);\n';
 };
 
 Blockly.JavaScript['event_repeat_timer'] = function(block) {

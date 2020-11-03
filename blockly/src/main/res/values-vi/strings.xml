@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">common</string>
+    <string name="confirm_clear_workspace_message">Xóa vùng làm việc?</string>
+    <string name="confirm_clear_workspace_title">Bạn có chắc chắn muốn dọn dẹp vùng làm việc không?</string>
+    <string name="yes">Có</string>
+    <string name="no">Không</string>
+    <string name="zoom_in">Phóng to </string>
+    <string name="zoom_out">Thu nhỏ</string>
+    <string name="no_blocks_error">Vùng làm việc trống!</string>
+</resources>

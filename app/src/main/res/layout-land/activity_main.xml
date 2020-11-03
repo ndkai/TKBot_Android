@@ -6,58 +6,88 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:background="@drawable/titkul_background"
+    
     android:layout_height="match_parent"
     tools:context=".ui.main.MainActivity">
-        
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_alignParentStart="true"
-            android:src="@drawable/titkul_logo"/>
+         <FrameLayout
+             android:layout_width="wrap_content"
+             android:layout_alignParentStart="true"
+             android:orientation="vertical"
+             android:layout_height="wrap_content">
+                 <de.hdodenhof.circleimageview.CircleImageView
+                     android:layout_width="@dimen/_40sdp"
+                     android:layout_height="@dimen/_40sdp"
+                     android:layout_gravity="center_horizontal"
+                     android:layout_marginTop="@dimen/_10sdp"
+                     android:src="@drawable/titkul_logo"/>
+
+             <ImageView
+                 android:layout_marginTop="@dimen/_3sdp"
+                 android:layout_width="@dimen/_150sdp"
+                 android:layout_height="@dimen/_80sdp"
+                 android:scaleType="fitXY"
+                 android:src="@drawable/titkul_name"/>
+         </FrameLayout>
+
         <LinearLayout
             android:layout_alignParentEnd="true"
             android:layout_width="wrap_content"
             android:orientation="horizontal"
             android:id="@+id/tool_layout"
-            android:padding="10dp"
             android:layout_height="wrap_content">
-                <ImageButton
-                    android:layout_width="60dp"
-                    android:scaleType="fitXY"
-                    android:layout_height="60dp"
-                    android:background="@android:color/transparent"
-                    android:layout_marginRight="20dp"
-                    android:src="@drawable/book"/>
+<!--                <ImageButton-->
+<!--                    android:layout_width="@dimen/_40sdp"-->
+<!--                    android:scaleType="fitXY"-->
+<!--                    android:layout_height="@dimen/_40sdp"-->
+<!--                    android:background="@android:color/transparent"-->
+<!--                    android:layout_marginRight="@dimen/_15sdp"-->
+<!--                    android:src="@drawable/book"/>-->
+            <com.skydoves.powerspinner.PowerSpinnerView
+                android:id="@+id/spinnerView"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:background="#D5F4F8"
+                android:foreground="?attr/selectableItemBackground"
+                android:hint="Select your country"
+                android:textColor="#EDE81B1B"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:textColorHint="@color/white_70"
+                android:textSize="@dimen/_14sdp"
+                app:spinner_arrow_gravity="end"
+                app:spinner_arrow_padding="@dimen/_8ssp"
+                app:spinner_divider_color="@color/white_70"
+                app:spinner_divider_show="true"
+                app:spinner_divider_size="0.4dp"
+                app:spinner_popup_animation="dropdown"
+                app:spinner_popup_background="@color/background900"
+                app:spinner_popup_elevation="@dimen/_14sdp"
+                tools:ignore="HardcodedText,UnusedAttribute" />
 
-                <ImageButton
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_marginRight="20dp"
-                    android:background="@android:color/transparent"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/setting_icon" />
-
-                <ImageButton
-                    android:scaleType="fitXY"
-                    android:layout_width="55dp"
-                    android:id="@+id/about_icon"
-                    android:background="@android:color/transparent"
-                    android:layout_height="55dp"
-                    android:src="@drawable/about"/>
+            <ImageButton
+                android:id="@+id/about_icon"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/_20ssp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/info_icon" />
         </LinearLayout>
-       
-        <LinearLayout
-            android:layout_alignParentTop="true"
-            android:id="@+id/viewpaper_layout"
-            android:layout_width="match_parent"
-            android:orientation="vertical"
-            android:background="@android:color/transparent"
-            android:layout_marginHorizontal="50dp"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_height="wrap_content">
 
-        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/viewpaper_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="@dimen/_45sdp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="-3dp"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+    </LinearLayout>
 </android.widget.RelativeLayout>

@@ -9,6 +9,8 @@ Turtle.touchPort = "00";
 
 Turtle.temperature = 0;
 
+Turtle.potenl = 0;
+
 Turtle.execute = function(code) {
 try {
     eval(code);
@@ -67,10 +69,14 @@ Turtle.servo = function(port, slot, angle){
 }
 
 //temperature
-Turtle.temperature = function(port,slot){
-     return Android.getTemVal(port, slot);
+Turtle.temperature = function(port){
+     return Android.getTemVal(port);
 }
 
+//potenl
+Turtle.potenl = function(port){
+     return Android.getPotenlVal(port);
+}
 //follow1
  Turtle.lineFollow1 = function(port){
      Android.lineFollow1(port);
@@ -78,13 +84,19 @@ Turtle.temperature = function(port,slot){
 
 //follow2
 Turtle.lineFollow2 = function(port, side, color){
-    Android.lineFollow2(port, side, color);
+    return Android.lineFollow2(port, side, color);
 }
 
 //touch
 Turtle.touch = function(port){
     Turtle.touchPort = port;
     return Android.getTouchVal(port);
+}
+
+//avoid
+Turtle.avoid = function(port){
+    Turtle.touchPort = port;
+    return Android.getAvoidVal(port);
 }
 
 Turtle.requestTouch = function(){

@@ -124,8 +124,6 @@ public class HexUtil {
 
     public static float hexToFloat(int hexnum){
         float f = Float.intBitsToFloat(hexnum);
-        System.out.println(f);
-        System.out.printf("%f", f);
         return  f;
     }
 

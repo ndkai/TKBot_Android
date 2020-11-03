@@ -6,21 +6,21 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="14"
-8-->C:\Users\Admin\AndroidStudioProjects\MyApplication\IOT_App\FastBleLib\src\main\AndroidManifest.xml
+8-->C:\Users\Admin\AndroidStudioProjects\TKBot\FastBleLib\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="22" />
-9-->C:\Users\Admin\AndroidStudioProjects\MyApplication\IOT_App\FastBleLib\src\main\AndroidManifest.xml
+9-->C:\Users\Admin\AndroidStudioProjects\TKBot\FastBleLib\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.BLUETOOTH" />
-11-->C:\Users\Admin\AndroidStudioProjects\MyApplication\IOT_App\FastBleLib\src\main\AndroidManifest.xml:4:5-68
-11-->C:\Users\Admin\AndroidStudioProjects\MyApplication\IOT_App\FastBleLib\src\main\AndroidManifest.xml:4:22-65
+11-->C:\Users\Admin\AndroidStudioProjects\TKBot\FastBleLib\src\main\AndroidManifest.xml:4:5-68
+11-->C:\Users\Admin\AndroidStudioProjects\TKBot\FastBleLib\src\main\AndroidManifest.xml:4:22-65
 12    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
-12-->C:\Users\Admin\AndroidStudioProjects\MyApplication\IOT_App\FastBleLib\src\main\AndroidManifest.xml:5:5-74
-12-->C:\Users\Admin\AndroidStudioProjects\MyApplication\IOT_App\FastBleLib\src\main\AndroidManifest.xml:5:22-71
+12-->C:\Users\Admin\AndroidStudioProjects\TKBot\FastBleLib\src\main\AndroidManifest.xml:5:5-74
+12-->C:\Users\Admin\AndroidStudioProjects\TKBot\FastBleLib\src\main\AndroidManifest.xml:5:22-71
 13    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-13-->C:\Users\Admin\AndroidStudioProjects\MyApplication\IOT_App\FastBleLib\src\main\AndroidManifest.xml:6:5-81
-13-->C:\Users\Admin\AndroidStudioProjects\MyApplication\IOT_App\FastBleLib\src\main\AndroidManifest.xml:6:22-78
+13-->C:\Users\Admin\AndroidStudioProjects\TKBot\FastBleLib\src\main\AndroidManifest.xml:6:5-81
+13-->C:\Users\Admin\AndroidStudioProjects\TKBot\FastBleLib\src\main\AndroidManifest.xml:6:22-78
 14    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-14-->C:\Users\Admin\AndroidStudioProjects\MyApplication\IOT_App\FastBleLib\src\main\AndroidManifest.xml:7:5-79
-14-->C:\Users\Admin\AndroidStudioProjects\MyApplication\IOT_App\FastBleLib\src\main\AndroidManifest.xml:7:22-76
+14-->C:\Users\Admin\AndroidStudioProjects\TKBot\FastBleLib\src\main\AndroidManifest.xml:7:5-79
+14-->C:\Users\Admin\AndroidStudioProjects\TKBot\FastBleLib\src\main\AndroidManifest.xml:7:22-76
 15
 16</manifest>

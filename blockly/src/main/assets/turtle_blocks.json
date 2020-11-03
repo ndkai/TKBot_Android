@@ -1,7 +1,7 @@
 [
   {
     "type": "turtle_move_internal",
-    "message0": "move %1 %2",
+    "message0": "Move %1 %2",
     "args0": [
       {
         "type": "field_dropdown",
@@ -22,32 +22,20 @@
         "name": "VALUE",
         "options": [
           [
-            "255",
+            "100",
             "255"
           ],
           [
-            "100",
+            "50",
             "100"
           ],
           [
-            "50",
+            "25",
             "50"
           ],
           [
             "0",
             "0"
-          ],
-          [
-            "-50",
-            "-50"
-          ],
-          [
-            "-100",
-            "-100"
-          ],
-          [
-            "-255",
-            "-255"
           ]
         ]
       }
@@ -59,7 +47,7 @@
   },
   {
     "type": "turtle_turn_internal",
-    "message0": "turn %1 %2",
+    "message0": "Turn %1 %2",
     "args0": [
       {
         "type": "field_dropdown",
@@ -80,32 +68,20 @@
         "name": "VALUE",
         "options": [
           [
-            "255",
+            "100",
             "255"
           ],
           [
-            "100",
+            "50",
             "100"
           ],
           [
-            "50",
+            "25",
             "50"
           ],
           [
             "0",
             "0"
-          ],
-          [
-            "-50",
-            "-50"
-          ],
-          [
-            "-100",
-            "-100"
-          ],
-          [
-            "-255",
-            "-255"
           ]
         ]
       }
@@ -424,43 +400,31 @@
   },
   {
     "type": "ultrasonic_port",
-    "message0": "Ulstrasonic  %1 (cm)",
+    "message0": "Ultrasonic  %1 (cm)",
     "args0": [
       {
         "type": "field_dropdown",
         "name": "Ul_Port",
         "options": [
           [
-            "Port1",
-            "Turtle.ultraSensor('01')"
-          ],
-          [
-            "Port2",
+            "port2",
             "Turtle.ultraSensor('02')"
           ],
           [
-            "Port3",
+            "port3",
             "Turtle.ultraSensor('03')"
           ],
           [
-            "Port4",
-            "Turtle.ultraSensor('04')"
-          ],
-          [
-            "Port5",
+            "port5",
             "Turtle.ultraSensor('05')"
           ],
           [
-            "Port6",
+            "port6",
             "Turtle.ultraSensor('06')"
           ],
           [
-            "Port7",
+            "port7",
             "Turtle.ultraSensor('07')"
-          ],
-          [
-            "Port8",
-            "Turtle.ultraSensor('08')"
           ]
         ]
       }
@@ -519,7 +483,7 @@
   },
   {
     "type": "wait",
-    "message0": "wait %1 secs",
+    "message0": "wait %1 ms",
     "args0": [
       {
         "type": "field_number",
@@ -535,16 +499,12 @@
   }  ,
   {
     "type": "servo_tit",
-    "message0": "Set servo %1 %2 angle %3",
+    "message0": "Set servo %1 angle %2",
     "args0": [
       {
         "type": "field_dropdown",
         "name": "servo_port",
         "options": [
-          [
-            "port1",
-            "01"
-          ],
           [
             "port2",
             "02"
@@ -552,10 +512,6 @@
           [
             "port3",
             "03"
-          ],
-          [
-            "port4",
-            "04"
           ],
           [
             "port5",
@@ -568,24 +524,6 @@
           [
             "port7",
             "07"
-          ],
-          [
-            "port8",
-            "08"
-          ]
-        ]
-      },
-      {
-        "type": "field_dropdown",
-        "name": "servo_slot",
-        "options": [
-          [
-            "slot1",
-            "01"
-          ],
-          [
-            "slot2",
-            "02"
           ]
         ]
       },
@@ -625,41 +563,56 @@
   ,
   {
     "type": "temperature_tit",
-    "message0": "temperature %1 %2 °C",
+    "message0": "Temperature %1°C",
     "args0": [
       {
         "type": "field_dropdown",
         "name": "tem_port",
         "options": [
           [
-            "tem_port1",
-            "01"
-          ],
-          [
-            "tem_port2",
+            "port2",
             "02"
           ],
           [
-            "tem_port3",
+            "port3",
             "03"
           ],
           [
-            "tem_port4",
-            "04"
-          ]
-        ]
-      },
-      {
-        "type": "field_dropdown",
-        "name": "tem_slot",
-        "options": [
-          [
-            "tem_slot1",
-            "slot1"
+            "port5",
+            "05"
           ],
           [
-            "tem_slot2",
-            "slot2"
+            "port6",
+            "06"
+          ],
+          [
+            "port7",
+            "07"
+          ]
+        ]
+      }
+    ],
+    "output": null,
+    "colour": 60,
+    "tooltip": "",
+    "helpUrl": ""
+  },
+
+  {
+    "type": "potenl_tit",
+    "message0": "Potenl %1",
+    "args0": [
+      {
+        "type": "field_dropdown",
+        "name": "potenl_port",
+        "options": [
+          [
+            "port2",
+            "02"
+          ],
+          [
+            "port3",
+            "03"
           ]
         ]
       }
@@ -701,27 +654,35 @@
 
   {
     "type": "line_follow2",
-    "message0": "Line follower %1 %2 is %3",
+    "message0": "Line %1 %2 %3",
     "args0": [
       {
         "type": "field_dropdown",
         "name": "line_port",
         "options": [
           [
-            "Port1",
+            "port1",
             "01"
           ],
           [
-            "Port2",
+            "port2",
             "02"
           ],
           [
-            "Port3",
+            "port3",
             "03"
           ],
           [
-            "Port4",
+            "port4",
             "04"
+          ],
+          [
+            "port5",
+            "05"
+          ],
+          [
+            "port6",
+            "06"
           ]
         ]
       },
@@ -730,12 +691,12 @@
         "name": "side",
         "options": [
           [
-            "leftside",
-            "left"
+            "s1-black",
+            "black"
           ],
           [
-            "rightside",
-            "right"
+            "s1-white",
+            "white"
           ]
         ]
       },
@@ -744,11 +705,11 @@
         "name": "color",
         "options": [
           [
-            "black",
+            "s2-black",
             "black"
           ],
           [
-            "white",
+            "s2-white",
             "white"
           ]
         ]
@@ -793,38 +754,69 @@
     "output": null,
     "helpUrl": ""
   },
-
+  {
+    "type": "avoid_sensor",
+    "message0": "Avoid sensor %1",
+    "args0": [
+      {
+        "type": "field_dropdown",
+        "name": "avoid_port",
+        "options": [
+          [
+            "port2",
+            "Turtle.avoid('02')"
+          ],
+          [
+            "port3",
+            "Turtle.avoid('03')"
+          ],
+          [
+            "port5",
+            "Turtle.touch('05')"
+          ],
+          [
+            "port6",
+            "Turtle.avoid('06')"
+          ],
+          [
+            "port7",
+            "Turtle.avoid('07')"
+          ]
+        ]
+      }
+    ],
+    "output": null,
+    "colour": 65,
+    "tooltip": "",
+    "helpUrl": ""
+  },
   {
     "type": "touch_sensor",
-    "message0": "touch sensor %1",
+    "message0": "Touch sensor %1",
     "args0": [
       {
         "type": "field_dropdown",
         "name": "touch_port",
         "options": [
           [
-            "Port1",
-            "Turtle.touch('01')"
-          ],
-          [
-            "Port2",
+            "port2",
             "Turtle.touch('02')"
           ],
           [
-            "Port3",
+            "port3",
             "Turtle.touch('03')"
           ],
           [
-            "Port4",
-            "Turtle.touch('04')"
-          ],
-          [
-            "Port5",
+            "port5",
             "Turtle.touch('05')"
           ],
           [
-            "Port6",
+            "port6",
             "Turtle.touch('06')"
+          ],
+          [
+            "port7",
+            "Turtle.touch('07')"
           ]
         ]
       }
@@ -982,15 +974,15 @@
         "name": "valuemotor1",
         "options": [
           [
-            "255",
+            "100",
             "255"
           ],
           [
-            "100",
+            "50",
             "100"
           ],
           [
-            "50",
+            "25",
             "50"
           ],
           [
@@ -998,16 +990,16 @@
             "0"
           ],
           [
-            "-50",
-            "-50"
+            "-100",
+            "-255"
           ],
           [
-            "-100",
+            "-50",
             "-100"
           ],
           [
-            "-255",
-            "-255"
+            "-25",
+            "-50"
           ]
         ]
       }
@@ -1027,15 +1019,15 @@
         "name": "valuemotor2",
         "options": [
           [
-            "255",
+            "100",
             "255"
           ],
           [
-            "100",
+            "50",
             "100"
           ],
           [
-            "50",
+            "25",
             "50"
           ],
           [
@@ -1043,16 +1035,16 @@
             "0"
           ],
           [
-            "-50",
-            "-50"
+            "-100",
+            "-255"
           ],
           [
-            "-100",
+            "-50",
             "-100"
           ],
           [
-            "-255",
-            "-255"
+            "-25",
+            "-50"
           ]
         ]
       }

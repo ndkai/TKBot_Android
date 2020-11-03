@@ -9,7 +9,10 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
     <uses-permission android:name="android.permission.INTERNET" />
-    
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -21,7 +24,7 @@
         <activity android:name=".ui.main.MainActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="landscape">
-           
+
         </activity>
 
         <activity android:name=".ui.splash_activity.SplashActivity"
@@ -34,16 +37,17 @@
         </activity>
         <activity android:name=".ui.blockly_activity.BlocklyActivity"
             android:theme="@style/blockly"
+            android:label="Coding"
             android:screenOrientation="landscape">
 
         </activity>
-        <activity    android:screenOrientation="landscape"  android:name=".ui.handed_controller.HandedControllerActivity">
+        <activity
+            android:theme="@style/ControllerTheme"
+            android:label="Controller"
+            android:screenOrientation="landscape"  android:name=".ui.handed_controller.HandedControllerActivity">
 
         </activity>
 
-        <activity android:screenOrientation="landscape" android:name=".game.GameActivity">
-
-        </activity>
 
         <activity android:name=".ui.bluetooth.ble.BleActivity"
             android:theme="@style/AppTheme"
@@ -52,6 +56,31 @@
         <activity android:name=".ui.bluetooth.ble.operation.OperationActivity"
             android:theme="@style/AppTheme"
             android:screenOrientation="landscape"/>
+
+        <activity android:name=".ui.base.BaseActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".ui.speech_activity.SpeechActivity"
+            android:theme="@style/ControllerTheme"
+            android:screenOrientation="landscape">
+
+        </activity>
+
+        <activity android:name=".ui.qr_activity.qr_reader.DecoderActivity"
+            android:theme="@style/ControllerTheme"
+            android:screenOrientation="portrait">
+
+
+        </activity>
+        <activity android:name=".ui.qr_activity.QrActivity"
+            android:theme="@style/ControllerTheme"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name=".ui.bluetooth.hc05.BlueToothActivity"
+            android:screenOrientation="behind"
+            android:theme="@style/AppTheme" />
     </application>
 
 </manifest>

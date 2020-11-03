@@ -13,6 +13,7 @@
         android:layout_height="match_parent"
         android:layout_marginStart="21dp"
         android:layout_marginLeft="21dp"
+        android:fitsSystemWindows="true"
         android:layout_toEndOf="@+id/blockly_categories"
         android:layout_toRightOf="@id/blockly_categories"
         blockly:drawGrid="false" />
@@ -65,8 +66,4 @@
             android:background="@color/translucent"
             android:padding="4dp"/>
     </LinearLayout>
-    <WebView
-        android:layout_width="1dp"
-        android:layout_height="1dp"
-        android:id="@+id/webview"/>
 </RelativeLayout>

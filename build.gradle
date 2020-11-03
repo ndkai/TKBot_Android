@@ -8,7 +8,7 @@ buildscript {
     repositories {
         google()
         jcenter()
-        
+
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:4.0.1'
@@ -67,4 +67,6 @@ ext {
     junitVersion = '4.12'
     espressoVersion = '3.1.0'
     mockitoVersion = '2.15.0'
+
+
 }

@@ -1,10 +1,6 @@
 package com.example.iot_app.di.module;
 
-import android.content.Context;
-import android.content.DialogInterface;
-
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import com.example.iot_app.data.IDataManager;
@@ -43,5 +39,7 @@ public class ActivityModule {
     SplashPresenter provideSplashPresenter(IDataManager iDataManager){
         return new SplashPresenter(iDataManager);
     }
+
+
 
 }

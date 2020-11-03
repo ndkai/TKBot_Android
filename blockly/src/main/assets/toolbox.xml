@@ -13,19 +13,22 @@
       //sensor
     <category name="Sensor">
         <block type="ultrasonic_port"></block>
-<!--        <block type="temperature_tit"></block>-->
-<!--        <block type="light_sensor"></block>-->
+        <block type="temperature_tit"></block>
+        <block type="potenl_tit"></block>
 <!--        <block type="line_follow"></block>-->
 <!--        <block type="line_follow2"></block>-->
         <block type="touch_sensor"></block>
+        <block type="avoid_sensor"></block>
+        <block type="line_follow2"></block>
 <!--        <block type="sound_sensor"></block>-->
 
     </category>
 
     <category name="Control" colour="#5CA65C">
         <block type="event_program_starts" />
+        <block type="event_repeat_forever" />
 <!--        <block type="event_repeat_timer" />-->
-        <block type="wait" />
+
         <!--<block type="event_wait" />-->
         <block type="controls_repeat_ext">
             <value name="TIMES">
@@ -35,17 +38,18 @@
             </value>
         </block>
 
-        <block type="controls_repeat_ext">
-            <value name="TIMES">
-                <shadow type="text">
-                    <field name="TEXT">true</field>
-                </shadow>
-            </value>
-        </block>
+        <block type="wait" />
+<!--        <block type="controls_repeat_ext">-->
+<!--            <value name="TIMES">-->
+<!--                <shadow type="text">-->
+<!--                    <field name="TEXT">true</field>-->
+<!--                </shadow>-->
+<!--            </value>-->
+<!--        </block>-->
 
-        <block type="controls_whileUntil">
-            <field name="MODE">WHILE</field>
-        </block>
+<!--        <block type="controls_whileUntil">-->
+<!--            <field name="MODE">WHILE</field>-->
+<!--        </block>-->
 <!--        <block type="controls_for">-->
 <!--            <field name="VAR" id="rECrJU5V^DFFV)=Fs^+D" variabletype="">i</field>-->
 <!--            <value name="FROM">-->
